@@ -24,3 +24,10 @@ GET     /public/*filepath                       Static.Serve("public")
 # For rapid development uncomment the following to add new controller.action endpoints
 # without having to add them to the routes table.
 # *       /:controller/:action                    :controller.:action
+
+## Tara 
+#GET     /animal/:id   AnimalController.Get
+#POST    /animal       AnimalController.Add
+#PUT     /animal/:id   AnimalController.Update
+#DELETE  /animal/:id   AnimalController.Delete
+GET     /animals      AnimalController.Index

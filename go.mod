@@ -3,6 +3,7 @@ module myapp
 go 1.18
 
 require (
+	github.com/coopernurse/gorp v1.6.1
 	github.com/revel/modules v1.1.0
 	github.com/revel/revel v1.1.0
 )
