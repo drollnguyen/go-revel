@@ -26,8 +26,9 @@ GET     /public/*filepath                       Static.Serve("public")
 # *       /:controller/:action                    :controller.:action
 
 ## Tara 
-#GET     /animal/:id   AnimalController.Get
-#POST    /animal       AnimalController.Add
-#PUT     /animal/:id   AnimalController.Update
-#DELETE  /animal/:id   AnimalController.Delete
-GET     /animals      AnimalController.Index
+#GET     /animal/:id   Animal.Get
+#POST    /animal       Animal.Add
+#PUT     /animal/:id   Animal.Update
+#DELETE  /animal/:id   Animal.Delete
+GET     /animal/create  Animal.Create
+GET     /animals      Animal.Index

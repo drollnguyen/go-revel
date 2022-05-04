@@ -12,10 +12,21 @@ func (t *TaraTest) Before() {
 	println("Show hand")
 }
 
-func (t *TaraTest) TestShowHands() {
+func (t *TaraTest) TestStandUp() {
+	t.Get("/")
+	a := 4
+	if a == 4 {
+
+		t.AssertOk()
+	} else {
+		t.AssertNotFound()
+	}
+}
+
+func (t *TaraTest) TestStandDown() {
 	// t.Get("/")
-	t.AssertNotFound()
-	// t.AssertContentType("text/html; charset=utf-8")
+	t.AssertOk()
+	// t.AssertNotFound()
 }
 
 // func (t *TaraTest) TestRaiseYourHands() {
